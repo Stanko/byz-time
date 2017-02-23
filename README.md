@@ -1,2 +1,3 @@
-# byz-time
-Small web app for recalculating Byzantine time - http://tadic.education/vizantijsko-vreme/
+# Byzantine time
+
+Small web app I did for my father for recalculating Byzantine time - http://tadic.education/vizantijsko-vreme/

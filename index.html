@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <title>Израчунавање византијског времена</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/skyblue.css" />
+  <link rel="stylesheet" href="css/pikaday.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+  <div class="app padding-y-50 js-app">
+    <div class="container">
+      <h2>Израчунавање византијског времена</h2>
+      <div class="row">
+        <div class="col md-6">
+          <label>Изаберите локацију</label>
+          <select class="form-control js-cities"></select>
+
+          <label class="">
+            <input type="checkbox" class="js-custom-time">
+            Унесите време уместо тренутног
+          </label>
+          <input disabled readonly placeholder="Изаберите датум и време" class="form-control date-time js-date-time" type="text" />
+
+          <div class="time">
+            <div class="js-city">Учитавам</div>
+            <div class="js-which-time">&nbsp;</div>
+            <h1 class="margin-0 js-time">&nbsp;</h1>
+          </div>
+
+          <img src="img/mapa.jpg" class="margin-bottom-15" />
+        </div>
+        <div class="col md-6">
+          <h4>Опис</h4>
+          <p>
+            Програм израчунава текуће византијско време у
+            двадесет светогорских манастира. За задати датум и
+            време (час, минут) могуће је одредити одговарајуће
+            византијско време.
+          </p>
+            <h4>Објашњење</h4>
+            На Светој Гори званични часовни систем јесте византијски,
+            по коме се часови одбројавају, не од поноћи, него од
+            заласка сунца. Упоредо са византијским постоји и савремени
+            часовни систем (Источноевропско време, EET) према коме се
+            управљају све цивилне службе на Светој Гори, и сви ходочасници.
+            Оба часовна система имају исту јединицу, и исти начин одбројавања,
+            два пута од 1 до 12 h.<br />
+            По источноевропском времену лако разликујемо преподневне и
+            послеподневне часове означене истим редним бројем.
+            По византијском времену то одређење не важи, и када
+            видите да је уз византијски час дописано „по дану”,
+            то значи да он припада другој дванаестици. Надопуна
+            тог часа до 12 h казује колико је времена још остало
+            до заласка сунца (до почетка новог „византијског” дана).
+          </p>
+          <p class="small-text">
+            Литература: Тадић, М. (2015). Византијски часовни систем српског
+            манастира Хиландар (и целе Свете Горе). <i>Зборник радова – Географски
+            факултет Универзитета у Београду, LXII</i>, s. 121–144.
+          </p>
+          <p class="small-text">
+            Подаци о заласку сунца се узимају са сајта
+            <a href="http://sunrise-sunset.org/api">Sunset and sunrise times API</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/byz-time-min.js"></script>
+</body>
+</html>
