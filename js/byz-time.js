@@ -208,7 +208,7 @@ $(document).ready(function() {
       yesterday = picker.getMoment().seconds(0).subtract(1, 'day');
     }
 
-    var url = 'http://api.sunrise-sunset.org/json?lat=' + city.lat + '&lng=' + city.long + '&date=' + yesterday.format('YYYY-MM-DD');
+    var url = 'https://api.sunrise-sunset.org/json?lat=' + city.lat + '&lng=' + city.long + '&date=' + yesterday.format('YYYY-MM-DD');
 
     if (cache[url]) {
       printTime(cache[url]);
